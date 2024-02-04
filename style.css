@@ -2,48 +2,48 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'IBM Plex Mono', monospace; /* Using IBM Plex Mono */
-    background-color: #121212; /* Dark background */
-    color: #f5f5f5; /* Bright green text */
-    font-size: 16px; /* Adjust base font size if necessary */
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #121212;
+    color: #f5f5f5;
+    font-size: 16px;
 }
 
-/* Include Google Font for 8-bit style */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
 header {
-    background-color: #222; /* Slightly lighter shade for the header */
-    padding: 20px; /* Adjust padding to ensure space around the content */
-    text-align: left; /* Align content to the left */
-    border-radius: 15px; /* Rounded corners for the header border */
-    margin: 10px; /* Add some margin around the header for space from the page edges */
+    background-color: #222; 
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%; 
 }
 
+
 #logo {
-    height: 100px; /* Make the logo 2x larger */
-    width: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: if you want the logo itself also to have rounded corners */
+    height: auto;
+    max-width: 100%;
+    max-height: 100px;
 }
 
 .card {
-    background-color: #333; /* Dark shade for card background */
-    color: #fff; /* White text for readability */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 8px auto; /* Center cards horizontally */
-    border: 2px solid #fff; /* White border for the cards */
-    border-radius: 10px; /* Rounded corners for the cards */
-    max-width: 300px; /* Maximum width for the cards */
+    margin: 8px auto;
+    border-radius: 10px;
+    max-width: 300px;
+    transform: scale(0.9); /* Scale down the cards to 70% */
+    transform-origin: center; /* Ensure the cards scale from their center */
 }
-
 
 #sketch-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -51,18 +51,18 @@ header {
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Optional: Adds rounded corners to the images */
-    image-rendering: pixelated; /* Gives images a more 8-bit look */
+    border-radius: 5px;
+    image-rendering: pixelated;
 }
 
 .card h2, .card p {
-    word-wrap: break-word; /* Ensures text fits within the card */
+    word-wrap: break-word;
     text-align: center;
 }
 
 .card a, .github-link {
-    color: #ffffff; /* Bright green text for links */
-    text-decoration: none; /* No underline for a cleaner look */
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .github-link {
@@ -72,17 +72,20 @@ header {
 }
 
 .github-link i {
-    font-size: 24px; /* GitHub icon size */
+    font-size: 24px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
+    #logo {
+        max-height: 50px; 
+    }
+
     #sketch-container {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-columns: 1fr;
     }
 
     .card {
-        width: 90%; /* Adjust card width for smaller screens */
-        margin: 0 auto; /* Center the cards horizontally */
+        width: 90%;
+        margin: 0 auto;
     }
 }
