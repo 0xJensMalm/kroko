@@ -25,6 +25,16 @@ header {
     max-height: 100px;
 }
 
+#sketch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
 .card {
     background-color: #333;
     color: #fff;
@@ -32,20 +42,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin: 8px auto;
+    margin: 10px; /* Adjust margin as needed */
     border-radius: 10px;
-    max-width: 300px;
-    transform: scale(0.9); /* Scale down the cards to 70% */
-    transform-origin: center; /* Ensure the cards scale from their center */
+    width: calc(33.333% - 40px); /* Adjust based on actual margin/padding */
+    box-sizing: border-box;
+    transition: transform 0.2s;
 }
 
-#sketch-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.card:hover {
+    transform: scale(1.05); /* Optional hover effect */
 }
 
 .card img {
@@ -56,8 +61,9 @@ header {
 }
 
 .card h2, .card p {
-    word-wrap: break-word;
-    text-align: center;
+    text-align: center; /* Center-aligns the text */
+    margin: 0; /* Removes any default margins that might affect alignment */
+    padding: 0 10px; /* Adds some padding on the sides for better readability */
 }
 
 .card a, .github-link {
@@ -75,6 +81,80 @@ header {
     font-size: 24px;
 }
 
+nav ul {
+    list-style-type: none;
+    display: flex; /* This makes sure the list items are in a flex context */
+    padding: 0;
+    margin: 0;
+    align-items: center; /* This will vertically center the links */
+    flex-wrap: nowrap; /* Prevent the list items from wrapping */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adds some space between the links */
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 0.8rem; /* Adjust the font size for mobile */
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+section {
+    padding: 20px 0; /* Add some padding to each section */
+    border-bottom: 1px solid #444; /* Add a subtle separator */
+}
+section h2 {
+    padding: 0 20px; /* Add padding to the left and right */
+}
+section p {
+    padding: 0 20px; /* Add padding to the left and right of the section description texts */
+}
+
+.table-container {
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+    text-align: center; /* Center-aligns the table container */
+    
+}
+
+table {
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Collapses the border to avoid double borders */
+    background-color: #333; /* Matches the card background color */
+    color: #fff; /* Text color to match the theme */
+    border-radius: 10px; /* Optional: Adds rounded corners to the table */
+    overflow: hidden; /* Ensures the rounded corners clip the content */
+    width: 70%; /* Ensures the table takes up the appropriate width */
+    min-width: 600px; /* Minimum width of the table to maintain its structure */
+}
+
+table th, table td {
+    padding: 10px; /* Adds padding inside table cells */
+    border: 1px solid #444; /* Subtle border for cells */
+}
+
+table th {
+    background-color: #222; /* Slightly darker background for header cells */
+}
+table a {
+    color: inherit; /* Inherits the color from the parent element, ensuring consistency */
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.fa-github { /* Assuming you're using Font Awesome for the GitHub icon */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+
 @media (max-width: 600px) {
     #logo {
         max-height: 50px; 
@@ -88,4 +168,20 @@ header {
         width: 90%;
         margin: 0 auto;
     }
+    nav ul {
+        flex-direction: column; /* Stack the navigation items vertically on smaller screens */
+        align-items: center; /* Center-align the stacked items */
+    }
+
+    nav a {
+        font-size: 0.7rem; /* You might need to reduce the font size further */
+        padding: 5px 3px; /* Adjust padding to make more room */
+    }
+    .table-container {
+        margin: 0; /* Resets the margin on very small screens */
+    }
+    
+}
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
 }

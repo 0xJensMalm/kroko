@@ -7,49 +7,157 @@
     <title>Kromatisk Kodeverksted</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
 </head>
 
 <body>
     <header>
-        <img src="img/title.png" alt="Kromatisk Kodeverksted Logo" id="logo"> <!-- Logo image -->
+        <img src="img/title.png" alt="Kromatisk Kodeverksted Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#generative-art">Generativ Kunst</a></li>
+                <li><a href="#scripts">Scripts</a></li>
+                <li><a href="#about">Om Kromatisk Kodeverksted</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="sketch-container">
-        <!-- Card 1: Chromatic Abbrevation -->
-        <div class="card">
-            <a href="genart/ChromaticAbbrevation/index.html" class="card-link">
-                <img src="img/chromatic.png" alt="Chromatic Abbrevation">
-                <h2>Chromatic Abbrevation</h2>
-                <p>Chromatic Abbrevation sandbox</p>
-            </a>
-            <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
 
-        <!-- Card 2: On The Spectrum -->
-        <div class="card">
-            <a href="genart/OnTheSpectrum/index.html" class="card-link">
-                <img src="img/spectrum.png" alt="On The Spectrum">
-                <h2>On The Spectrum</h2>
-                <p>A non functioning but still kind of cool oscilloscope.</p>
-            </a>
-            <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+    <main>
+        <!-- Generative Art Section -->
+        <section id="generative-art">
+            <h2>Generativ Kunst</h2>
+            <div id="sketch-container">
+                <!-- Card 1: Chromatic Abbreviation -->
+                <div class="card">
+                    <a href="genart/ChromaticAbbreviation/index.html" class="card-link">
+                        <img src="img/chromatic.png" alt="Chromatic Abbreviation">
+                        <h3>Chromatic Abbreviation</h3>
+                        <p>Eksperimenter med kromatisk abbrevasjon, eller såkalt fargeblødning </p>
+                    </a>
+                    <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
 
-        <!-- Card 3: Fine Art Generator -->
-        <div class="card">
-            <a href="genart/FineArtFactory/index.html" class="card-link">
-                <img src="img/FineArt.png" alt="Fine Art Generator">
-                <h2>Fine Art Generator</h2>
-                <p>Generate fine art: Profit.</p>
-            </a>
-            <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+                <!-- Card 2: On The Spectrum -->
+                <div class="card">
+                    <a href="genart/OnTheSpectrum/index.html" class="card-link">
+                        <img src="img/spectrum.png" alt="On The Spectrum">
+                        <h3>On The Spectrum</h3>
+                        <p>Noe som kan ligne på et oscilloskop. </p>
+                    </a>
+                    <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3: Fine Art Generator -->
+                <div class="card">
+                    <a href="genart/FineArtFactory/index.html" class="card-link">
+                        <img src="img/FineArt.png" alt="Fine Art Generator">
+                        <h3>Fine Art Generator</h3>
+                        <p>Generate fine art: Profit.</p>
+                    </a>
+                    <a href="https://github.com/0xJensMalm/Chromatic-Aberration" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="path/to/LINUR-project" class="card-link"> <!-- Update the href to the actual path -->
+                        <img src="img/linur.png" alt="LINUR">
+                        <h2>LINUR</h2>
+                        <p>Et NFT prosjekt fra 2021. </p> <!-- Add a meaningful description -->
+                    </a>
+                    <a href="https://github.com/your-github/LINUR-repo" target="_blank" class="github-link">
+                        <!-- Update the GitHub link -->
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="path/to/EDENA-project" class="card-link"> <!-- Update the href to the actual path -->
+                        <img src="img/edena.png" alt="EDENA">
+                        <h2>EDENA</h2>
+                        <p>NFT prosjekt fra 2022.</p> <!-- Add a meaningful description -->
+                    </a>
+                    <a href="https://github.com/your-github/EDENA-repo" target="_blank" class="github-link">
+                        <!-- Update the GitHub link -->
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scripts Section -->
+        <section id="scripts">
+            <h2>Scripts</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Navn</th>
+                            <th>Info</th>
+                            <th>Språk</th>
+                            <th>Repo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/0xJensMalm/Bulk-Image-Converter" target="_blank">Bulk Image
+                                    Converter</a></td>
+                            <td>Konverter bilder til andre formater i bulk.</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/0xJensMalm/Bulk-Image-Converter" target="_blank"><i
+                                        class="fab fa-github"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/0xJensMalm/Simple-OpenAI-API-Client" target="_blank">Simple
+                                    OpenAI API Client</a></td>
+                            <td>En enkel integrasjon med OpenAI API. </td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/0xJensMalm/Simple-OpenAI-API-Client" target="_blank"><i
+                                        class="fab fa-github"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/0xJensMalm/GIF-Frame-Extractor" target="_blank">GIF Frame
+                                    Extractor</a></td>
+                            <td>Dra ut alle bildene fra en gif.</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/0xJensMalm/GIF-Frame-Extractor" target="_blank"><i
+                                        class="fab fa-github"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>Om</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Elit duis tristique sollicitudin nibh sit amet. Pulvinar mattis nunc sed blandit
+                libero volutpat sed. At risus viverra adipiscing at in tellus integer feugiat. Volutpat commodo sed
+                egestas egestas fringilla phasellus. Duis ultricies lacus sed turpis tincidunt. Quis ipsum suspendisse
+                ultrices gravida dictum fusce. Massa massa ultricies mi quis hendrerit. Facilisis sed odio morbi quis
+                commodo. Et molestie ac feugiat sed lectus vestibulum mattis. Tincidunt augue interdum velit euismod in
+                pellentesque massa placerat duis. Dictum sit amet justo donec enim diam.
+
+                Urna id volutpat lacus laoreet. Amet justo donec enim diam vulputate ut pharetra sit amet. Tellus in
+                metus vulputate eu scelerisque felis. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+                Viverra justo nec ultrices dui. Ipsum dolor sit amet consectetur adipiscing elit ut. Consectetur a erat
+                nam at lectus urna duis convallis. Ante in nibh mauris cursus mattis molestie. Magnis dis parturient
+                montes nascetur ridiculus mus mauris vitae. Amet consectetur adipiscing elit duis tristique sollicitudin
+                nibh sit amet. Dignissim sodales ut eu sem integer vitae justo. Cras pulvinar mattis nunc sed blandit
+                libero volutpat. Quam vulputate dignissim suspendisse in.</p>
+            <p>
+        </section>
+
     </main>
 </body>
 
